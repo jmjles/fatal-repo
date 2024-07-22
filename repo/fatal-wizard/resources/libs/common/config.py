@@ -19,7 +19,7 @@
 
 import xbmc
 import xbmcaddon
-
+import xbmcvfs
 import os
 
 import uservar
