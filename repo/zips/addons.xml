@@ -15,24 +15,20 @@
     <extension point="xbmc.service" library="startup.py" start="startup" />
     
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">[COLOR limegreen]Open[/COLOR]Wizard</summary>
+        <summary lang="en">[COLOR red]Fatal[/COLOR]Wizard</summary>
         <description lang="en">[COLOR red]Fatal[/COLOR]Wizard offers many maintenance features, selective add-on data saving, and automated build installs.</description>
         <platform>all</platform>
         <reuselanguageinvoker>false</reuselanguageinvoker>
-        <source>https://www.github.com/drinfernoo/plugin.program.openwizard/</source>
+        <source>https://www.github.com/a4k-openproject/plugin.program.openwizard/</source>
         <news>
-1.4.9
- - Fix Error Related to Log
-1.4.8
- - Fix regex for formatting tags
- - Fix theme selection after build install
- - Fix downloading into invalid path
-1.4.7
- - Don't show Matrix builds in previous versions
-1.4.6
- - Use Speed Tester add-on from official repo
+2.0.2
+ - Replace remaining occurences of LOGNOTICE
+2.0.1
+ - Add attribution to @slamious
+2.0.0
+ - Initial Matrix support
 1.4.5
- - Fix bugs with unintended files being cleared
+ - Fix bugs with unintended files being cleared`
 1.4.4
  - Transfer ownership
 1.4.3

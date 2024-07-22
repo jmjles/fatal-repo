@@ -20,6 +20,7 @@
 import xbmc
 import xbmcaddon
 import xbmcvfs
+
 import os
 
 import uservar
@@ -130,7 +131,7 @@ class Config:
                               'Textures13.db', 'Thumbs.db']
         self.XMLS = ['advancedsettings.xml', 'sources.xml', 'favourites.xml',
                      'profiles.xml', 'playercorefactory.xml', 'guisettings.xml']
-        self.MODURL = 'http://tribeca.tvaddons.ag/tools/maintenance/modules/'
+        self.MODURL = 'http://mirrors.kodi.tv/addons/matrix/'
         self.MODURL2 = 'http://mirrors.kodi.tv/addons/jarvis/'
         self.DEPENDENCIES = ['script.module.bottle', 'script.module.certifi',
                              'script.module.chardet', 'script.module.idna',
@@ -210,8 +211,7 @@ class Config:
         self.EXTERROR = self.get_setting('errors')
         
         # View variables
-        self.SHOW17 = self.get_setting('show17')
-        self.SHOW18 = self.get_setting('show18')
+        self.SHOW19 = self.get_setting('show19')
         self.SHOWADULT = self.get_setting('adult')
         self.SEPARATE = self.get_setting('separate')
         self.DEVELOPER = self.get_setting('developer')

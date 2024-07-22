@@ -130,8 +130,7 @@ def force_check_updates(auto=False, over=False):
                 
                 if lastcheck:
                     checked_time = lastcheck.fetchone()[0]
-                    if checked_time:
-                        checked_time = time.mktime(time.strptime(checked_time, '%Y-%m-%d %H:%M:%S'))
+                    checked_time = time.mktime(time.strptime(checked_time, '%Y-%m-%d %H:%M:%S')) if checked_time else 0
                     
                 xbmc.sleep(1000)
             checked_time = 0
@@ -517,7 +516,7 @@ def find_binary_addons(addon='all'):
         xml = os.path.join(CONFIG.ADDONS, addon, 'addon.xml')
         
         if os.path.exists(xml):
-            logging.log('Checking {0}'.format(xml), level=xbmc.LOGNOTICE)
+            logging.log('Checking {0}'.format(xml), level=xbmc.LOGINFO)
             root = ElementTree.parse(xml).getroot()
             addonid = root.get('id')
             addonname = root.get('name')
